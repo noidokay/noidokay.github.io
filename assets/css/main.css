@@ -1140,9 +1140,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1619,6 +1622,58 @@ input, select, textarea {
 			}
 
 		}
+
+	#blog {
+  padding: 2em;
+}
+
+h2.major {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5em;
+}
+
+.blog-item {
+  text-align: center;
+  background: #f9f9f9;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.blog-item .date {
+  font-size: 0.9em;
+  color: #666;
+  margin: 0.5em 0;
+}
+
+.blog-item h3 {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+
+.blog-item .description {
+  font-size: 1em;
+  color: #333;
+  margin: 0.5em 0 1em;
+}
+
+.blog-item .read-more {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
 
 /* Footer */
 
